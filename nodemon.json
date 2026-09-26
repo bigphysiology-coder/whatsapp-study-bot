@@ -1,0 +1,4 @@
+{
+  "watch": ["src", "scripts", "index.js", "extract.js"],
+  "ignore": ["node_modules", ".wwebjs_auth", "data", "*.pdf"]
+}

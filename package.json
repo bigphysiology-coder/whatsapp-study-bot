@@ -1,0 +1,34 @@
+{
+  "name": "study-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "node scripts/cleanup.js",
+    "start": "node index.js",
+    "predev": "node scripts/cleanup.js",
+    "dev": "nodemon index.js",
+    "extract": "node extract.js",
+    "generate": "node extract.js",
+    "migrate": "node src/migrate.js",
+    "reset-session": "node scripts/reset-session.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@whiskeysockets/baileys": "^7.0.0-rc14",
+    "canvas": "^3.2.3",
+    "dotenv": "^18.0.3",
+    "node-cron": "^4.6.0",
+    "pdf-parse": "^2.4.5",
+    "pg": "^8.23.0",
+    "qrcode-terminal": "^0.12.0",
+    "uuid": "^14.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
